@@ -12,6 +12,10 @@
 		867A4877230B1400003A58A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867A4876230B1400003A58A5 /* Assets.xcassets */; };
 		867A487A230B1400003A58A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867A4878230B1400003A58A5 /* LaunchScreen.storyboard */; };
 		867A487D230B1400003A58A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A487C230B1400003A58A5 /* main.m */; };
+		867A4889230B14F4003A58A5 /* JSTEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A4888230B14F4003A58A5 /* JSTEntry.m */; };
+		867A488C230B185D003A58A5 /* JSTEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A488B230B185D003A58A5 /* JSTEntryController.m */; };
+		867A4891230B3525003A58A5 /* JSTEntriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A4890230B3525003A58A5 /* JSTEntriesTableViewController.m */; };
+		867A4894230B3565003A58A5 /* JSTEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A4893230B3565003A58A5 /* JSTEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		867A4879230B1400003A58A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		867A487B230B1400003A58A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867A487C230B1400003A58A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		867A4887230B14F4003A58A5 /* JSTEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTEntry.h; sourceTree = "<group>"; };
+		867A4888230B14F4003A58A5 /* JSTEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTEntry.m; sourceTree = "<group>"; };
+		867A488A230B185D003A58A5 /* JSTEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTEntryController.h; sourceTree = "<group>"; };
+		867A488B230B185D003A58A5 /* JSTEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTEntryController.m; sourceTree = "<group>"; };
+		867A488F230B3525003A58A5 /* JSTEntriesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTEntriesTableViewController.h; sourceTree = "<group>"; };
+		867A4890230B3525003A58A5 /* JSTEntriesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTEntriesTableViewController.m; sourceTree = "<group>"; };
+		867A4892230B3565003A58A5 /* JSTEntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTEntryDetailViewController.h; sourceTree = "<group>"; };
+		867A4893230B3565003A58A5 /* JSTEntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,10 @@
 		867A4884230B144A003A58A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				867A488F230B3525003A58A5 /* JSTEntriesTableViewController.h */,
+				867A4890230B3525003A58A5 /* JSTEntriesTableViewController.m */,
+				867A4892230B3565003A58A5 /* JSTEntryDetailViewController.h */,
+				867A4893230B3565003A58A5 /* JSTEntryDetailViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +103,8 @@
 		867A4885230B144D003A58A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				867A4887230B14F4003A58A5 /* JSTEntry.h */,
+				867A4888230B14F4003A58A5 /* JSTEntry.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,6 +112,8 @@
 		867A4886230B1451003A58A5 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				867A488A230B185D003A58A5 /* JSTEntryController.h */,
+				867A488B230B185D003A58A5 /* JSTEntryController.m */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -124,6 +144,7 @@
 		867A4862230B13FF003A58A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JST;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jax Tubbs";
 				TargetAttributes = {
@@ -170,6 +191,10 @@
 			files = (
 				867A487D230B1400003A58A5 /* main.m in Sources */,
 				867A486F230B13FF003A58A5 /* AppDelegate.m in Sources */,
+				867A4894230B3565003A58A5 /* JSTEntryDetailViewController.m in Sources */,
+				867A4891230B3525003A58A5 /* JSTEntriesTableViewController.m in Sources */,
+				867A488C230B185D003A58A5 /* JSTEntryController.m in Sources */,
+				867A4889230B14F4003A58A5 /* JSTEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = JournalObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = JournalObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
